@@ -1,4 +1,4 @@
-import { createTheme, ThemeOptions, Theme } from "@mui/material";
+import { createTheme, ThemeOptions, Theme } from "@mui/material"
 
 export const defaultThemeOptions: ThemeOptions = {
   palette: {
@@ -47,10 +47,10 @@ export const themeConfig: ThemeOptions = {
             margin: "auto",
           },
           "&.Mui-disabled": {
-            marginLeft: 32
-          }
+            marginLeft: 32,
+          },
         },
-      }
+      },
     },
     MuiAccordionSummary: {
       styleOverrides: {
@@ -58,8 +58,8 @@ export const themeConfig: ThemeOptions = {
           borderBottom: "1px solid rgba(255, 255, 255, .125)",
           minHeight: 56,
           "&.Mui-expanded": {
-            minHeight: 56
-          }
+            minHeight: 56,
+          },
         },
         content: {
           alignItems: "center",
@@ -68,14 +68,14 @@ export const themeConfig: ThemeOptions = {
             margin: "12px 0",
           },
         },
-      }
+      },
     },
     MuiAccordionDetails: {
       styleOverrides: {
         root: {
           backgroundColor: "#212121",
-        }
-      }
+        },
+      },
     },
     MuiDrawer: {
       styleOverrides: {
@@ -85,16 +85,16 @@ export const themeConfig: ThemeOptions = {
           },
         },
         paper: {},
-      }
+      },
     },
     MuiPopover: {
       styleOverrides: {
         paper: {
           backgroundColor: "#121212",
         },
-      }
-    }
-  }
+      },
+    },
+  },
 }
 
 export default createTheme(themeConfig)

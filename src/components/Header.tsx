@@ -25,13 +25,9 @@ const Header = (props: AppBarProps) => {
             variant="h6"
             sx={{ typography: "h6", lineHeight: "1.25rem" }}
           >
-            MUI Theme Creator
+            Superlunar Surface
           </Typography>
-          <Typography
-            variant="caption"
-            sx={{ typography: "caption", fontWeight: 700 }}
-          >
-            {"└─ "}
+          <Typography variant="caption" sx={{ typography: "caption" }}>
             <Link
               href="https://mui.com/"
               target="_blank"

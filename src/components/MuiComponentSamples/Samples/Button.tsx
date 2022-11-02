@@ -1,20 +1,21 @@
-import CloudUploadIcon from "@mui/icons-material/CloudUpload";
-import DeleteIcon from "@mui/icons-material/Delete";
-import KeyboardVoiceIcon from "@mui/icons-material/KeyboardVoice";
-import SaveIcon from "@mui/icons-material/Save";
-import { Box, Typography } from "@mui/material";
-import Button from "@mui/material/Button";
-import React from "react";
+import CloudUploadIcon from "@mui/icons-material/CloudUpload"
+import DeleteIcon from "@mui/icons-material/Delete"
+import KeyboardVoiceIcon from "@mui/icons-material/KeyboardVoice"
+import SaveIcon from "@mui/icons-material/Save"
+import { Box, Typography } from "@mui/material"
+import Button from "@mui/material/Button"
+import React from "react"
 
 const groupStyle = {
   mb: 2,
-  '& > *': {
-    m: 1
-  }
-};
+  p: 0,
+
+  "& button": {
+    mr: 1,
+  },
+}
 
 export default function ButtonsExample() {
-
   return (
     <div>
       <Typography variant="h6" id="contained-buttons">
@@ -27,6 +28,9 @@ export default function ButtonsExample() {
         </Button>
         <Button variant="contained" color="secondary">
           Secondary
+        </Button>
+        <Button variant="contained" gradient="primary">
+          Gradient
         </Button>
         <Button variant="contained" disabled>
           Disabled
@@ -108,5 +112,5 @@ export default function ButtonsExample() {
         </Button>
       </Box>
     </div>
-  );
+  )
 }
