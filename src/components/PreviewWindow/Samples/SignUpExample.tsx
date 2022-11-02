@@ -15,26 +15,34 @@ import React from "react"
 export default function SignUpExample() {
   return (
     <Container component="main" maxWidth="xs">
-      <Box sx={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         <Tooltip title={`<Avatar> color="secondary"`} arrow>
-          <Avatar sx={{
-            m: 1,
-            bgcolor: 'secondary.main',
-          }}>
+          <Avatar
+            sx={{
+              m: 1,
+              bgcolor: "secondary.main",
+            }}
+          >
             <LockOutlinedIcon />
           </Avatar>
         </Tooltip>
         <Tooltip title={`<Typography color="textPrimary" variant="h5">`} arrow>
           <Typography variant="h5">Sign up</Typography>
         </Tooltip>
-        <Box component="form" sx={{
-          width: 1, // Fix IE 11 issue.
-          mt: 3,
-        }} noValidate>
+        <Box
+          component="form"
+          sx={{
+            width: 1, // Fix IE 11 issue.
+            mt: 3,
+          }}
+          noValidate
+        >
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <TextField
@@ -89,19 +97,34 @@ export default function SignUpExample() {
                     <Checkbox value="allowExtraEmails" color="primary" />
                   </Tooltip>
                 }
-                label="I want to receive inspiration, marketing promotions and updates via email."
+                label="I want to hear more from Superlunar."
               />
             </Grid>
           </Grid>
-          <Tooltip title={`<Button color="primary" variant="contained">`} arrow>
+          <Tooltip
+            title={`<Button gradient="primary" variant="contained">`}
+            arrow
+          >
             <Button
               type="submit"
-              fullWidth
               variant="contained"
-              color="primary"
-              sx={{ mt: 3, mx: 0, mb: 2 }}
+              gradient="primary"
+              sx={{ mt: 3, mr: 1, mb: 2, ml: 0 }}
             >
               Sign Up
+            </Button>
+          </Tooltip>
+          <Tooltip
+            title={`<Button color="secondary" variant="contained">`}
+            arrow
+          >
+            <Button
+              type="cancel"
+              variant="contained"
+              color="secondary"
+              sx={{ mt: 3, mx: 0, mb: 2 }}
+            >
+              Cancel
             </Button>
           </Tooltip>
           <Grid container justifyContent="flex-end">
@@ -116,5 +139,5 @@ export default function SignUpExample() {
         </Box>
       </Box>
     </Container>
-  );
+  )
 }

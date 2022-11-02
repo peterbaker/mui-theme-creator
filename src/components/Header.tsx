@@ -38,17 +38,6 @@ const Header = (props: AppBarProps) => {
             </Link>
           </Typography>
         </div>
-        <div>
-          <TutorialButton />
-          <IconButton
-            href="https://github.com/Zenoo/mui-theme-creator"
-            target="_blank"
-            rel="noreferrer"
-            size="large"
-          >
-            <GitHubIcon />
-          </IconButton>
-        </div>
       </Toolbar>
     </AppBar>
   )
