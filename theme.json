@@ -1,0 +1,206 @@
+  palette: {
+    mode: "light",
+    primary: {
+      main: "#000",
+    },
+    secondary: {
+      main: "#fff",
+    },
+    info: {
+      main: "#0000ff",
+    },
+    success: {
+      main: "#008000",
+    },
+    warning: {
+      main: "#a6a659",
+    },
+    error: {
+      main: "#ff0000",
+    },
+  },
+  typography: {
+    fontSize: 14,
+    fontFamily: '"Mikro", sans-serif',
+    fontWeightLight: 400,
+    fontWeightBold: 600,
+    
+    h1: {
+      fontSize: "4rem",
+    },
+    h2: {
+      fontSize: "3rem",
+      // fontSize: "1.5rem",
+      lineHeight: 1.33,
+      // marginBottom: "1em",
+    },
+    h3: {
+      fontSize: "1.6rem",
+      lineHeight: 1.6,
+      marginTop: "1.6em",
+    },
+    h4: {
+      fontSize: "1rem",
+      lineHeight: 1.5,
+    },
+  },
+  shape: {
+    borderRadius: 0,
+  },
+  components: {
+    MuiLink: {
+      defaultProps: {
+        color: "inherit",
+      },
+    },
+    MuiList: {
+      defaultProps: {
+        dense: true,
+      },
+    },
+    MuiMenuItem: {
+      defaultProps: {
+        dense: true,
+      },
+    },
+    MuiTable: {
+      defaultProps: {
+        size: "small",
+      },
+    },
+    MuiButton: {
+      defaultProps: {
+        size: "small",
+      },
+      styleOverrides: {
+        root: {
+          boxShadow: 'none',
+        },
+      },
+      variants: [
+        {
+          props: { variant: 'contained' },
+          style: {
+            borderWidth: '3px',
+            borderStyle: 'solid',
+            borderColor: '#000000',
+            '&:hover': {
+              boxShadow: '3px 3px 0 black',
+              borderColor: '#ffffff',
+            }
+          },
+        },
+        {
+          props: { variant: 'contained', color: 'secondary' },
+          style: {
+            '&:hover': {
+              boxShadow: '3px 3px 0 rgb(178, 178, 178)',
+            } 
+          },
+        },
+        {
+          props: { variant: 'contained', gradient: 'primary' },
+          style: {
+            backgroundImage: 'linear-gradient(to bottom right, #01C5E7, #E13AF5)',
+            borderColor: '#330000',
+            '&:hover': {
+              background: `linear-gradient(to top right, #01C5E7, #E13AF5)`,
+              borderColor: '#ffffff',
+              boxShadow: '3px 3px 0 #01C5E7',
+            } 
+          },
+        },
+        {
+          props: { variant: 'contained', disabled: true },
+          style: {
+            'borderColor': 'rgb(0, 0, 0, 0.93)',
+            '&:hover': {
+              boxShadow: '3px 3px 0 rgb(178, 178, 178)',
+            } 
+          },
+        },
+      ],
+    },
+    MuiButtonGroup: {
+      defaultProps: {
+        size: "small",
+      },
+    },
+    MuiCard: {
+      defaultProps: {
+        size: "small",
+      },
+      styleOverrides: {
+        root: {
+          boxShadow: 'none',
+        },
+      },
+      variants: [
+        {
+          props: { variant: 'outlined' },
+          style: {
+            borderWidth: '1px',
+            borderStyle: 'solid',
+            borderColor: '#000000',
+          },
+        },
+      ]
+    },
+    MuiCheckbox: {
+      defaultProps: {
+        size: "small",
+      },
+    },
+    MuiFab: {
+      defaultProps: {
+        size: "small",
+      },
+    },
+    MuiFormControl: {
+      defaultProps: {
+        margin: "dense",
+        size: "small",
+      },
+    },
+    MuiFormHelperText: {
+      defaultProps: {
+        margin: "dense",
+      },
+    },
+    MuiIconButton: {
+      defaultProps: {
+        size: "small",
+      },
+    },
+    MuiInputBase: {
+      defaultProps: {
+        margin: "dense",
+      },
+    },
+    MuiInputLabel: {
+      defaultProps: {
+        margin: "dense",
+      },
+    },
+    MuiRadio: {
+      defaultProps: {
+        size: "small",
+      },
+    },
+    MuiSwitch: {
+      defaultProps: {
+        size: "small",
+      },
+    },
+    MuiTextField: {
+      defaultProps: {
+        margin: "dense",
+        size: "small",
+      },
+    },
+    MuiTooltip: {
+      defaultProps: {
+        arrow: true,
+      },
+    },
+  },
