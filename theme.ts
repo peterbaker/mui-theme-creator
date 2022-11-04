@@ -1,25 +1,25 @@
-import { ThemeOptions } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from "@mui/material";
 
-export const themeOptions: ThemeOptions = {
+let lightTheme = createTheme({
   palette: {
-    mode: 'light',
+    mode: "light",
     primary: {
-      main: '#000',
+      main: "#000",
     },
     secondary: {
-      main: '#fff',
+      main: "#fff",
     },
     info: {
-      main: '#0000ff',
+      main: "#0000ff",
     },
     success: {
-      main: '#008000',
+      main: "#008000",
     },
     warning: {
-      main: '#a6a659',
+      main: "#a6a659",
     },
     error: {
-      main: '#ff0000',
+      main: "#ff0000",
     },
   },
   typography: {
@@ -28,27 +28,27 @@ export const themeOptions: ThemeOptions = {
     fontWeightLight: 400,
     fontWeightBold: 600,
     h1: {
-      fontSize: '3.052rem',
+      fontSize: "3.052rem",
       lineHeight: 1.2,
     },
     h2: {
-      fontSize: '2.441rem',
+      fontSize: "2.441rem",
       lineHeight: 1.2,
     },
     h3: {
-      fontSize: '1.953rem',
+      fontSize: "1.953rem",
       lineHeight: 1.2,
     },
     h4: {
-      fontSize: '1.563rem',
+      fontSize: "1.563rem",
       lineHeight: 1.2,
     },
     h5: {
-      fontSize: '1.25rem',
+      fontSize: "1.25rem",
       lineHeight: 1.2,
     },
     h6: {
-      fontSize: '1rem',
+      fontSize: "1rem",
       lineHeight: 1.2,
     },
   },
@@ -59,26 +59,25 @@ export const themeOptions: ThemeOptions = {
     MuiAppBar: {
       styleOverrides: {
         root: {
-          boxShadow: '0 0 0 black',
+          boxShadow: "0 0 0 black",
         },
       },
     },
     MuiLink: {
       defaultProps: {
-        color: 'inherit',
+        color: "inherit",
       },
     },
     MuiBadge: {
       variants: [
         {
           props: {
-            color: 'secondary',
+            color: "secondary",
           },
           style: {
-            '& .MuiBadge-badge': {
-              backgroundImage:
-                'linear-gradient(to bottom right, #01C5E7, #E13AF5)',
-              color: '#fff',
+            "& .MuiBadge-badge": {
+              backgroundImage: "linear-gradient(to bottom right, #01C5E7, #E13AF5)",
+              color: "#fff",
             },
           },
         },
@@ -96,64 +95,63 @@ export const themeOptions: ThemeOptions = {
     },
     MuiButton: {
       defaultProps: {
-        size: 'small',
+        size: "small",
       },
       styleOverrides: {
         root: {
-          boxShadow: 'none',
+          boxShadow: "none",
         },
       },
       variants: [
         {
           props: {
-            variant: 'contained',
+            variant: "contained",
           },
           style: {
-            borderWidth: '3px',
-            borderStyle: 'solid',
-            borderColor: '#000000',
-            '&:hover': {
-              boxShadow: '3px 3px 0 black',
-              borderColor: '#ffffff',
+            borderWidth: "3px",
+            borderStyle: "solid",
+            borderColor: "#000000",
+            "&:hover": {
+              boxShadow: "3px 3px 0 black",
+              borderColor: "#ffffff",
             },
           },
         },
         {
           props: {
-            variant: 'contained',
-            color: 'secondary',
+            variant: "contained",
+            color: "secondary",
           },
           style: {
-            '&:hover': {
-              boxShadow: '3px 3px 0 rgb(178, 178, 178)',
+            "&:hover": {
+              boxShadow: "3px 3px 0 rgb(178, 178, 178)",
             },
           },
         },
         {
           props: {
-            variant: 'contained',
-            gradient: 'primary',
+            variant: "contained",
+            color: "primary",
           },
           style: {
-            backgroundImage:
-              'linear-gradient(to bottom right, #01C5E7, #E13AF5)',
-            borderColor: '#330000',
-            '&:hover': {
-              background: 'linear-gradient(to top right, #01C5E7, #E13AF5)',
-              borderColor: '#ffffff',
-              boxShadow: '3px 3px 0 #01C5E7',
+            backgroundImage: "linear-gradient(to bottom right, #01C5E7, #E13AF5)",
+            borderColor: "#330000",
+            "&:hover": {
+              background: "linear-gradient(to top right, #01C5E7, #E13AF5)",
+              borderColor: "#ffffff",
+              boxShadow: "3px 3px 0 #01C5E7",
             },
           },
         },
         {
           props: {
-            variant: 'contained',
+            variant: "contained",
             disabled: true,
           },
           style: {
-            borderColor: 'rgb(0, 0, 0, 0.93)',
-            '&:hover': {
-              boxShadow: '3px 3px 0 rgb(178, 178, 178)',
+            borderColor: "rgb(0, 0, 0, 0.93)",
+            "&:hover": {
+              boxShadow: "3px 3px 0 rgb(178, 178, 178)",
             },
           },
         },
@@ -161,109 +159,102 @@ export const themeOptions: ThemeOptions = {
     },
     MuiButtonGroup: {
       defaultProps: {
-        size: 'small',
+        size: "small",
       },
     },
     MuiCard: {
-      defaultProps: {
-        size: 'small',
-      },
       styleOverrides: {
         root: {
-          boxShadow: 'none',
+          boxShadow: "none",
         },
       },
       variants: [
         {
           props: {
-            variant: 'outlined',
+            variant: "outlined",
           },
           style: {
-            borderWidth: '1px',
-            borderStyle: 'solid',
-            borderColor: '#000000',
+            borderWidth: "1px",
+            borderStyle: "solid",
+            borderColor: "#000000",
           },
         },
       ],
     },
     MuiCheckbox: {
       defaultProps: {
-        size: 'small',
+        size: "small",
       },
     },
     MuiFab: {
       defaultProps: {
-        size: 'small',
+        size: "small",
       },
       styleOverrides: {
         root: {
-          boxShadow: '0 0 2px black',
+          boxShadow: "0 0 2px black",
 
-          '&:hover': {
-            boxShadow: '0 0 4px black',
+          "&:hover": {
+            boxShadow: "0 0 4px black",
           },
         },
       },
     },
     MuiFormControl: {
       defaultProps: {
-        margin: 'dense',
-        size: 'small',
+        margin: "dense",
+        size: "small",
       },
     },
     MuiFormHelperText: {
       defaultProps: {
-        margin: 'dense',
+        margin: "dense",
       },
     },
     MuiIconButton: {
       defaultProps: {
-        size: 'small',
+        size: "small",
       },
     },
     MuiInputBase: {
       defaultProps: {
-        margin: 'dense',
+        margin: "dense",
       },
     },
     MuiInputLabel: {
       defaultProps: {
-        margin: 'dense',
+        margin: "dense",
       },
     },
     MuiRadio: {
       defaultProps: {
-        size: 'small',
+        size: "small",
       },
     },
     MuiSnackbar: {
-      defaultProps: {
-        elevation: 0,
-      },
       styleOverrides: {
         root: {
-          boxShadow: '0 0 0 black',
+          boxShadow: "0 0 0 black",
         },
       },
     },
     MuiSwitch: {
       defaultProps: {
-        size: 'small',
+        size: "small",
       },
     },
     MuiTable: {
       defaultProps: {
-        size: 'small',
-        elevation: 0,
+        size: "small",
       },
       styleOverrides: {
         root: {
-          border: '2px #000 solid',
-          '& .MuiTableHead-root': {
-            '& .MuiTableRow-head': {
-              '& .MuiTableCell-head': {
-                backgroundColor: '#000',
-                color: '#fff',
+          border: "2px #000 solid",
+          "& .MuiTableHead-root": {
+            "& .MuiTableRow-head": {
+              "& .MuiTableCell-head": {
+                backgroundColor: "#000",
+                color: "#fff",
               },
             },
           },
@@ -272,20 +263,19 @@ export const themeOptions: ThemeOptions = {
     },
     MuiTablePagination: {
       defaultProps: {
-        size: 'small',
-        elevation: 0,
+        size: "small",
       },
       styleOverrides: {
         root: {
-          border: '2px #000 solid',
+          border: "2px #000 solid",
           borderTop: 0,
         },
       },
     },
     MuiTextField: {
       defaultProps: {
-        margin: 'dense',
-        size: 'small',
+        margin: "dense",
+        size: "small",
       },
     },
     MuiTooltip: {
@@ -294,4 +284,15 @@ export const themeOptions: ThemeOptions = {
       },
     },
   },
-};
+});
+
+lightTheme = responsiveFontSizes(lightTheme);
+
+const darkTheme = createTheme({
+  ...lightTheme.typography,
+  palette: {
+    mode: "dark",
+  },
+});
+
+export { lightTheme, darkTheme };
